@@ -1,0 +1,315 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 41%);
+  font-size: 18px;
+  font-family: 'Epilogue', sans-serif;
+}
+header{
+  margin: 20px 20px 20px 10px;
+}
+ul .sidebar{
+  display: flex;
+  justify-content: space-between;
+}
+.logo{
+  display: inline;
+  padding: 13px 0px 0px 10px;
+  margin-right: 0px;
+}
+.sidebar-logo, span, .close-menu{
+  display: none;
+}
+.navbar-left, .navbar-right{
+  display: flex;
+  align-items: center;
+  
+}
+.navbar-right li, .navbar-left li{
+  margin: 0px 20px;
+}
+
+li{
+  list-style-type: none;
+}
+
+button{
+  color: hsl(0, 0%, 41%);
+  padding: 8px 15px;
+  border: 1px solid hsl(0, 0%, 41%);
+  border-radius: 13px;
+  background-color: hsl(0, 0%, 98%);
+  font-size: 18px;
+}
+button:hover{
+  color: hsl(0, 0%, 8%);
+  border: 1px solid hsl(0, 0%, 8%);
+}
+li a{
+  color: hsl(0, 0%, 41%);
+  text-decoration: none;
+}
+li a:hover{
+  color: hsl(0, 0%, 8%);
+}
+.features li, .company li{
+  float: left;
+  margin-right: 5px;
+  color: hsl(0, 0%, 41%);
+}
+.features li:hover{
+  color: hsl(0, 0%, 8%);
+}
+.features div > div{
+  padding: 7px;
+}
+.company li:hover{
+  color: hsl(0, 0%, 8%);
+}
+.features, .company{
+  display: flex;
+  /*align-items: center;*/
+  position: relative;
+}
+/*COMPANY DROPDOWN*/
+.dropdown-content{
+  position: absolute;
+  top: 35px;
+  left: 25px;
+  background-color: hsl(0, 0%, 98%);
+  box-shadow: 5px 5px 15px 10px hsla(0, 0%, 41%,0.2);
+  border-radius: 8px;
+  min-width: 130px;
+  display: none;
+}
+.company:hover .dropdown-content{
+  display: block;
+}
+.dropdown-content a{
+  display: block;
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+  text-align: left;
+  padding: 5px;
+  margin: 15px 10px;
+}
+.company > img {
+  height: 10px;
+  margin-top: 5px;
+}
+/*FEATURES DROPDOWN*/
+.dropdown-content-b{
+  position: absolute;
+  top: 35px;
+  right: 5px;
+  background-color: hsl(0, 0%, 98%);
+  box-shadow: 5px 5px 15px 10px hsla(0, 0%, 41%, 0.2);
+  border-radius: 8px;
+  min-width: 180px;
+  padding: 20px 10px;
+  display: none;
+}
+.features:hover .dropdown-content-b{
+  display: block;
+}
+.features > img{
+  height: 10px;
+  margin-top: 5px; 
+}
+.dropdown-content-b a{
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+  text-align: left;
+  margin: 10px;
+  
+}
+/*MAIN*/
+main{
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 0px 50px 0 20px;
+}
+.image{
+  background-image: url("images/image-hero-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  margin-top: 30px;
+  height: auto;
+  width: 40.5%;
+  
+}
+.info-div{
+  width: 50%;
+  padding-right: 80px; 
+}
+.info{
+  /*margin: 50px 100px;*/
+}
+.info h2{
+  font-size: 3.4rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 8%);
+  margin: 100px 0 30px;
+}
+.info button{
+  margin: 30px 0px;
+  padding: 10px 20px;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
+  border: 1px solid hsl(0, 0%, 8%);
+  border-radius: 13px;
+  font-weight: 700;
+  font-size: 16px;
+}
+.info button:hover{
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 8%);
+  
+}
+.info p{
+  font-size: 15px;
+  line-height: 1.5rem;
+}
+/*FOOTER*/
+footer{
+  margin: 20px auto;
+  width: 100%;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 65px auto 5px;
+}
+
+/*MOBILE VIEW*/
+@media screen and (max-width: 450px) {
+  
+  .features, .company, .career, .about, .navbar-right{
+    
+  }
+  main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+  .image{
+    background-image: url("images/image-hero-mobile.png");
+    background-size: contain;
+    height: 300px;
+    width: 100%;
+    margin: 0px;
+    padding-bottom: 0px;
+  }
+  .logo{
+    margin-left: 0px;
+    padding: 0px;
+    display: none;
+  }
+  header{
+    margin-left: 0px;
+  }
+  .info h2{
+    padding-top: 0px;
+    font-size: 2rem;
+    margin-top: 0;
+  }
+  .info{
+    margin: 15px;
+    text-align: center;
+  }
+  ul .sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .navbar-left, .navbar-right{
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar-logo, span, .close-menu{
+    display: block;
+  }
+  .sidebar{
+    height: 100%;
+    background-color: hsl(0, 0%, 98%);
+    position: relative;
+    right: 0px;
+    top: 0px;
+    overflow-x: hidden;
+    position: fixed;
+    margin-top: 0px;
+    width: 0px;
+    transition: 0.15s;
+  }
+  .close-menu{
+    position: absolute;
+    right: 0px;
+    top: 17px;
+  }
+  .navbar-left{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 80px;
+    
+  }
+  .navbar-left li{
+    padding: 10px 10px;
+  }
+  .navbar-right{
+    margin: 30px;
+  }
+  .navbar-right button{
+    width: 220px;
+    margin: 15px 0px;
+  }
+  .dropdown-content{
+    box-shadow: none;
+    position: relative;
+    left: -100px;
+    margin-bottom: 40px;
+  }
+  .dropdown-content-b{
+    position: relative;
+    right: 90px;
+    top: 30px;
+    margin-bottom: 25px;
+    /*background-color: rgba(255,255,255,0.0);*/
+    box-shadow: none;
+  }
+  .features div > div{
+    padding: 10px 0px;
+  }
+  
+  .features, .company{
+    display: absolute;
+  }
+  .company > img, .features > img{
+    margin-top: 15px;
+    height: 8px;
+  }
+  .mobile-header{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+  }
+  .info-div{
+    width: 100%;
+    padding-right: 0;
+  }
+  .footer{
+    width: 95%;
+    margin: 10px 0px 10px 10px;
+  }
+  .footer img{
+    width: 3.4em;
+  }
+}
