@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL]()
-- Live Site URL: [Live site URL]()
+- Solution URL: [Solution URL](https://github.com/Bebe-dev/intro-section-with-dropdown-nav)
+- Live Site URL: [Live site URL](https://bebe-dev.github.io/intro-section-with-dropdown-nav/)
 
 ## My process
 
